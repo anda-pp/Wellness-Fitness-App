@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANDA</title>
+    <link rel="stylesheet" href="nutrition_style.css" />
+</head>
+<body>
+    <div class="left-menu">
+
+<img id="home" src="house-heart-fill.svg"  width="50px" height="50px"><br>
+
+<img id="menu" width="50px" height="50px" src="menu-up.svg"><br>
+
+<img id="account" width="50px" height="50px" src="person-circle.svg"><br>
+
+<img id="recipes" width="50px" height="50px" src="burger-solid.svg"><br>
+    </div>
+
+    <div class="right-menu">
+        <h1>Day </h1>
+
+        <label for="water">Water:</label><br>
+        <meter id="water" value="" min="0" max="100"></meter><br>
+
+        <label for="proteins">Proteins:</label><br>
+        <meter id="proteins" value="" min="0" max="100"></meter><br>
+
+        <label for="carbs">Carbs:</label><br>
+        <meter id="carbs"  value="" min="0" max="100"></meter><br>
+
+        <label for="fats">Fats:</label><br>
+        <meter id="fats" value="" min="0" max="100"></meter><br>
+    </div>
+    <script>
+        document.getElementById("home").addEventListener("click", displayDate);
+        function displayDate()
+        {
+            alert("Hello")
+        }
+    </script>
+</body>
+</html>
