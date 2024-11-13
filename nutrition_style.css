@@ -18,7 +18,13 @@ body
   background-size: cover;
 }
 
-.menu-body
+.log
+{
+  display: grid;
+
+}
+
+.menu
 {
   background-image: url('bg-menu.jpg');
   background-repeat: no-repeat;
