@@ -5,12 +5,25 @@ body
   display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vh;
+    min-height: 100vh;
     padding: 20px;
     overflow: auto;
+}
 
-  
+.sign
+{
+  background-image: url('bg-sign.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.menu-body
+{
+  background-image: url('bg-menu.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 form 
@@ -20,7 +33,7 @@ form
     box-shadow: 0 4px 20px rgba(112, 103, 105, 0.5);
     padding: 30px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     
 }
 
@@ -28,7 +41,8 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="password"],
-select {
+select  
+{
     width: 70%;
     height: 15px;
     padding: 15px;
@@ -39,6 +53,17 @@ select {
     border-radius: 10px;
     transition: border-color 0.3s;
     align-self: left;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus
+{
+    background-color: rgba(231, 227, 228);
+    outline: none;
+    
 }
 
 #addB,
@@ -54,23 +79,25 @@ select {
     background: limegreen;
 }
 
-.left-menu
+.menu-body 
 {
-    background-color:  #dcf5c3;
-    height: 110vh;
-    justify-content: start;
-
-}
-
-.right-menu
-{
-    background-color:  #94e957;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
     text-align: center;
-    height: 110vh;
-    width: 110vh;
-}
-
-p
-{
-
-}
+    background-color: rgba(231, 227, 228, 0.7);
+  }
+  
+  .menu-body input 
+  {
+    margin:auto;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+  }
+  
